@@ -1,0 +1,54 @@
+/**
+ * A simple theme for exoscale presentations, similar
+ * to the simple theme.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Helvetica Neue', Helvetica, sans-serif;
+$mainColor: #000;
+$headingFont: 'Helvetica Neue', Helvetica, sans-serif;
+$headingColor: #000;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #fff;
+$linkColor: #00008B;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+$codeBackground: #ddd;
+$swissColor: #d10019;
+
+.reveal {
+    code {
+        background-color: $codeBackground;
+        display: inline-block;
+        padding: 0 .2em;
+    }
+
+    pre, .figure {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    b {
+        color: $swissColor;
+    }
+}
+
+section.has-dark-background {
+    &, h1, h2, h3, h4, h5, h6 {
+        color: $backgroundColor;
+    }
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
