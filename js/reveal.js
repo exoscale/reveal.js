@@ -134,17 +134,17 @@
 			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
 			// Parallax background image
-			parallaxBackgroundImage: '', // CSS syntax, e.g. "a.jpg"
+			parallaxBackgroundImage: document.currentScript.src + '/../../css/images/many-mountains.svg', // CSS syntax, e.g. "a.jpg"
 
 			// Parallax background size
-			parallaxBackgroundSize: '', // CSS syntax, e.g. "3000px 2000px"
+			parallaxBackgroundSize: '4423px 1080px', // CSS syntax, e.g. "3000px 2000px"
 
 			// Parallax viewport size (ideal resolution of output device)
-			parallaxViewportSize: '', // CSS syntax, e.g. "1920px 1080px"
+			parallaxViewportSize: '1920px 1080px', // CSS syntax, e.g. "1920px 1080px"
 
 			// Amount of pixels to move the parallax background per slide step
 			parallaxBackgroundHorizontal: null,
-			parallaxBackgroundVertical: null,
+			parallaxBackgroundVertical: 0,
 
 			// Number of slides away from the current that are visible
 			viewDistance: 3,
